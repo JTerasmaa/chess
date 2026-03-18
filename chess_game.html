@@ -769,7 +769,7 @@ function renderBoard() {
         const pieceEl = document.createElement('span');
         const isWhitePiece = p === p.toUpperCase();
         pieceEl.className = 'piece ' + (isWhitePiece ? 'piece-white' : 'piece-black');
-        pieceEl.textContent = SYMBOLS[p] || p;
+        pieceEl.textContent = SYMBOLS[p] || p;            pieceEl.title = (isWhitePiece ? 'White ' : 'Black ') + (PIECE_NAMES[p.toUpperCase()] || p);
         sqEl.appendChild(pieceEl);
       }
 
