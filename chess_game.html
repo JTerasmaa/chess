@@ -180,13 +180,13 @@ body {
 }
 
 .piece.piece-white {
-  color: #fff8ee;
-  filter: drop-shadow(0 1px 0px #8b6347) drop-shadow(0 0 1px rgba(0,0,0,0.5));
+  color: #ffffff;
+  filter: drop-shadow(0 2px 0px #5a3010) drop-shadow(0 1px 3px rgba(0,0,0,0.8)) drop-shadow(0 0 1px #000);
 }
 
 .piece.piece-black {
   color: #1a0f00;
-  filter: drop-shadow(0 1px 0px rgba(0,0,0,0.9)) drop-shadow(0 0 2px rgba(0,0,0,0.7));
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.9)) drop-shadow(0 1px 1px rgba(255,255,255,0.7));
 }
 
 .sq:hover .piece { transform: scale(1.05); }
@@ -405,7 +405,7 @@ const PIECE_NAMES = {
   K:'King',Q:'Queen',R:'Rook',B:'Bishop',N:'Knight',P:'Pawn'
 };
 
-const INITIAL_FEN = 'rnb1b2N/p1pp2pp/3k4/Kp1P2B1/1P1P4/1QPn2P1/P6P/RNq4R b - - 0 1';
+const INITIAL_FEN = 'rnb1b2N/p1pp2pp/3k4/Kp1P2B1/1P1P4/1QPn2P1/P6P/RNq5 b - - 0 1';
 
 class Chess {
   constructor(fen) {
